@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<ul type="none">
+      <li><a href="Результаты забегов на 100м.html"><b><big>Результаты забегов на 100м</big></b></a></li>
+      <li><a href="Усэйн Болт.html">Усэйн Болт</a></li>      
+      <li><a href="Таблица результатов забегов.html">Таблица результатов забегов</a></li>
+    </ul>
+
+<details open="">
+<summary> <b>График:</b> </summary>
+<form>
+        <table>
+          <tbody><tr>
+            <th>Значениe по оси OX</th>
+            <th>Результат</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="ox" value="0">Пол<br>
+              <input type="radio" name="ox" value="1">Страна<br>
+              <input type="radio" name="ox" value="2">Время<br>
+            </td>
+            <td>
+              <input type="checkbox" name="oy" value="0">Максимальное время<br>
+              <input type="checkbox" name="oy" value="1">Минимальное время<br>
+	      <input type="checkbox" name="oy" value="2">Количество спортсменов<br>
+            </td>
+          </tr>
+        </tbody></table>
+		<input type="button" value="Построить">
+		<p>"ГРАФИК"</p>
+</form>
+</details>
+<br>
+<details open="">
+    <summary><b> Фильтр</b></summary>
+    <form>
+        <p>
+           <label for="structure">ФИО:</label>
+		   <input type="text" name="structure">
+        </p>
+        <p>
+		    <label for="category">Пол:</label>
+            <input type="text" name="category">
+        </p>
+        <p>
+		   <label for="country">Страна:</label>
+          <input type="text" name="country">
+        </p>
+ 		 <p>
+		  <label for="yFrom">Время: </label>
+           от <input type="text" name="yFrom"> до <input type="text" name="yFo">
+        </p>
+        <input type="button" value="Найти">		
+	</form>	
+</details>
+<br>
+<details open="">
+    <summary><b>Сортировка</b></summary>
+    <form>
+	  <p>
+          Первый уровень:
+          <select name="sortFirst">
+            <option value="0">Нет</option>
+            <option value="1">ФИО</option>
+            <option value="2">Страна</option>
+            <option value="3">Время</option>
+          </select>
+          по убыванию? <input type="checkbox" name="descFirst">
+        </p>  
+        <p>
+          Второй уровень:
+		  <select name="sortSecond">
+            <option value="0">Нет</option>
+            <option value="1">ФИО</option>
+            <option value="2">Страна</option>
+            <option value="3">Время</option>
+          </select>
+          по убыванию? <input type="checkbox" name="descSecond">
+        </p>
+        <p>
+          Третий уровень:
+          <select name="sortThird">
+            <option value="0">Нет</option>
+            <option value="1">ФИО</option>
+            <option value="2">Страна</option>
+            <option value="3">Время</option>
+          </select>
+          по убыванию? <input type="checkbox" name="descThird">
+        </p>
+      <input type="button" value="Сортировать">		
+	</form>	
+</details>
+
+
+<br><br>
+<table border="1" cellspacing="0" cellpadding="5">
+	<tbody><tr><th>ФИО</th><th>Пол</th><th>Страна</th><th>Время</th></tr>
+	<tr><td>Усэйн Болт</td><td>М</td><td>Ямайка</td><td>9,58</td></tr>
+	<tr><td>Тайсон Гэй</td><td>М</td><td>США</td><td>9,69</td></tr>
+	<tr><td>Йохан Блейк</td><td>М</td><td>Ямайка</td><td>9,69</td></tr>
+	<tr><td>Асафа Пауэлл</td><td>М</td><td>Ямайка</td><td>9,72</td></tr>
+	<tr><td>Джастин Гэтлин</td><td>М</td><td>США</td><td>9,74</td></tr>
+	<tr><td>Флоренс Гриффит-Джойнер</td><td>Ж</td><td>США</td><td>10,49</td></tr>
+	<tr><td>Элейн Томпсон-Гера</td><td>Ж</td><td>Ямайка</td><td>10,54</td></tr>
+	<tr><td>Шэлли-Энн Фрейзер-Прайс</td><td>Ж</td><td>Ямайка</td><td>10,60</td></tr>
+	<tr><td>Кармелита Джетер</td><td>Ж</td><td>США</td><td>10,64</td></tr>
+	<tr><td>Мэрион Джонс</td><td>Ж</td><td>США</td><td>10,65</td></tr>
+	<tr><td>Майкл Норман</td><td>М</td><td>США</td><td>9,86</td></tr>
+	<tr><td>Ноа Лайлс</td><td>М</td><td>США</td><td>9,86</td></tr>
+	<tr><td>Джимми Вико</td><td>М</td><td>Франция</td><td>9,86</td></tr>
+	<tr><td>Кестон Бледмен</td><td>М</td><td>Тринидад и Тобаго</td><td>9,86</td></tr>
+	<tr><td>Фрэнсис Обиора Обиквелу</td><td>М</td><td>Намибия</td><td>9,86</td></tr>
+	<tr><td>Ато Джабари Болдон</td><td>М</td><td>Тринидад и Тобаго</td><td>9,86</td></tr>
+	<tr><td>Фрэнк Фредерикс </td><td>М</td><td>Намибия</td><td>9,86</td></tr>
+	<tr><td>Бруни Сурин</td><td>М</td><td>Канада</td><td>9,84</td></tr>
+	<tr><td>Ламонт Марсель Якобс</td><td>М</td><td>Италия</td><td>9,80</td></tr>
+	<tr><td>Неста Картер</td><td>М</td><td>Ямайка</td><td>9,78</td></tr>
+	<tr><td>Фердинанд Оманьяла</td><td>М</td><td>Кения</td><td>9,77</td></tr>
+	<tr><td>Кристиан Коулман</td><td>М</td><td>США</td><td>9,76</td></tr>
+	<tr><td>Олусоджи Фасуба</td><td>М</td><td>Нигерия</td><td>9,85</td></tr>
+	<tr><td>Перси Уильямс</td><td>М</td><td>Канада</td><td>10,30</td></tr>
+	<tr><td>Джесси Оуэнс</td><td>М</td><td>США</td><td>10,20</td></tr>
+	<tr><td>Уилли Уильямс</td><td>М</td><td>США</td><td>10,10</td></tr>
+	<tr><td>Армин Эрих Хари</td><td>М</td><td>ФРГ</td><td>10,00</td></tr>
+	<tr><td>Джим Хайнс</td><td>М</td><td>США</td><td>9,95</td></tr>
+	<tr><td>Кэлвин Смит</td><td>М</td><td>США</td><td>9,93</td></tr>
+	<tr><td>Бенджамин Джонсон</td><td>М</td><td>Канада</td><td>9,83</td></tr>
+	<tr><td>Карл Льюис</td><td>М</td><td>США</td><td>9,92</td></tr>
+	<tr><td>Лерой Барелл</td><td>М</td><td>США</td><td>9,92</td></tr>
+	<tr><td>Томас Бёрк</td><td>М</td><td>США</td><td>12,00</td></tr>
+	<tr><td>Реджинальд Уолкер</td><td>М</td><td>Южная Афирка</td><td>10,80</td></tr>
+	<tr><td>Дональд Фитиан Липпинкотт</td><td>М</td><td>США</td><td>10,60</td></tr>
+	<tr><td>Чарльз Паддок</td><td>М</td><td>США</td><td>10,40</td></tr>
+	<tr><td>Вера Крепкина</td><td>Ж</td><td>СССР</td><td>11,30</td></tr>
+	<tr><td>Вильма Рудольф</td><td>Ж</td><td>США</td><td>11,30</td></tr>
+	<tr><td>Лени Юнкер</td><td>Ж</td><td>Германия</td><td>12,00</td></tr>
+	<tr><td>Кинуэ Хитоми</td><td>Ж</td><td>Япония</td><td>12,20</td></tr>
+	<tr><td>Бетти Робинсон</td><td>Ж</td><td>США</td><td>12,00</td></tr>
+	<tr><td>Кате Краусс</td><td>Ж</td><td>Германия</td><td>11,90</td></tr>
+	<tr><td>Хелен Стефенс</td><td>Ж</td><td>США</td><td>11,90</td></tr>
+	<tr><td>Лулу Маэ Хаймсe</td><td>Ж</td><td>США</td><td>11,50</td></tr>
+	<tr><td>Ровена Харрисон</td><td>Ж</td><td>США</td><td>11,50</td></tr>
+	<tr><td>Лени Шмидт</td><td>Ж</td><td>Германия</td><td>12,40</td></tr>
+	<tr><td>Вайомия Тайес</td><td>Ж</td><td>США</td><td>11,20</td></tr>
+	<tr><td>Ирена Киршенштейн</td><td>Ж</td><td>Польша</td><td>1101</td></tr>
+	<tr><td>Цзи Чжэн</td><td>Ж</td><td>КНР</td><td>11,00</td></tr>
+        <tr><td>Марита Кох</td><td>Ж</td><td>ГДР</td><td>11,30</td></tr>
+</tbody></table>
+
+
+</body>
+</html>
